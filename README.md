@@ -48,4 +48,4 @@ logger.add(RollingFile, options);
 
 For [node.js](http://nodejs.org/) and [npm](https://npmjs.org), run the "npm install" to provision this package in your app.
 
-	npm install git@github.com:yubeiluo/Winston-Rolling-File-Appender.git --save
+	npm install git://github.com/yubeiluo/Winston-Rolling-File-Appender.git --save
