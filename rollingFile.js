@@ -148,10 +148,10 @@ RollingFile.prototype._createLink = function(target) {
     , create = true;
 
   if ( exists ) {
-    var oldTargetName = fs.readlinkSync(linkName);
+    var oldTargetName = fs.readlinkSync(linkFilePath);
     if ( oldTargetName != targetName ) {
       console.log('removing old link %s => %s', linkName, oldTargetName);
-      fs.unlinkSync(linkName);
+      fs.unlinkSync(linkFilePath);
     } else {
       create = false;
     }
